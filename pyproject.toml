@@ -1,0 +1,27 @@
+[project]
+name = "homeserver"
+version = "0.1.0"
+description = "Code for installing and managing my homeserver"
+authors = [
+    { name = "Anonymous", email = "anonymous@example.com" }
+]
+readme = "README.md"
+
+requires-python = ">=3.12"
+dependencies = [
+    "pyinfra>=3.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["E", "F"]
+
+
